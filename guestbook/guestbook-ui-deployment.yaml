@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
         - image: busybox:stable
+          command: ["/bin/sh", "-c", "sleep 3600000"]
           name: guestbook-ui
           ports:
             - containerPort: 80
